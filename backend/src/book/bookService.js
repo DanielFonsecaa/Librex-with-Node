@@ -26,7 +26,7 @@ export async function createBook(bookData) {
         title: bookData.title,
         author: bookData.author,
         isbn: bookData.isbn,
-        price: bookData.price,
+        price: Math.round(bookData.price * 100) / 100,
         quantity: bookData.quantity,
         imageUrl: bookData.imageUrl,
         publisher: bookData.publisher,
