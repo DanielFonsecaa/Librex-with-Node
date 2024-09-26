@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+.container {
+  display: flex;
+}
+a {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+}
+.navigation {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px;
+  width: 100vw;
+  background: rgb(1, 39, 88);
+  z-index: 1000;
+}
+.logo {
+  transform: scale(0.8);
+}
+#searchNav {
+  margin: 10px 15px;
+}
+#inputBtn {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+#inputBtn:focus {
+  outline: none;
+}
+#searchBtn {
+  background-color: #eae4e4;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.navSearch {
+  display: none;
+  position: sticky;
+  top: 59px;
+  background-color: rgb(94, 94, 94);
+  z-index: 1000;
+}
+
+#inputNav {
+  margin: 10px;
+  margin-left: 30px;
+  color: white;
+  border: none;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  background-color: rgb(94, 94, 94);
+  font-size: large;
+}
+
+#inputNav:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .searchNav {
+    display: none;
+  }
+  .navSearch {
+    display: flex;
+  }
+  .nav-menu {
+    display: none;
+  }
+}
